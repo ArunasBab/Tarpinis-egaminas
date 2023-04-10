@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image {
+  height: 500px;
+  width: 500px;
+  background: url(../content/bg-masthead.jpg);
+  background-size: cover;
+}
+
