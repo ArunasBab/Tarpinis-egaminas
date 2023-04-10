@@ -1,0 +1,19 @@
+button {
+    padding: 5px;
+    background: $blue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: $grey;
+    color: $blue;
+  }
+
+  @media (max-width: 768px) {
+    .button1 {
+        padding: 7px;
+        width: 300px;
+      }
+  }

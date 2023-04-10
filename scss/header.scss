@@ -1,0 +1,20 @@
+header {
+    max-width: 1000px;
+    padding: 7px;
+    background: $grey;
+    font-size: 0.9em;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      width: 340px;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      transition: 2s;
+    }
+  }
