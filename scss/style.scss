@@ -17,9 +17,11 @@ body {
 }
 
 header {
+  max-width: 1000px;
   padding: 7px;
   background: $grey;
   font-size: 0.9em;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,6 +43,8 @@ button:hover {
 // 
 
 h1 {
+  width: 550px;
+  color: white;
   display: flex;
   justify-content: center;;
   align-items: center;
@@ -48,7 +52,9 @@ h1 {
 
 .sea {
   height: 370px;
+  max-width: 1000px;
   background: url(../content/bg-masthead.jpg);
+  margin: auto;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -62,11 +68,6 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 7px;
-}
-
-H1 {
-  width: 550px;
-  color: white;
 }
 
 input {
@@ -199,9 +200,13 @@ div.people {
   gap: 10px;
 }
 
+// 
+
 .sea1 {
   height: 250px;
+  max-width: 1000px;
   background: url(../content/bg-masthead.jpg);
+  margin: auto;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -214,7 +219,7 @@ div.people {
 
 nav {
   height: 150px;
-  width: 1000px;
+  max-width: 1000px;
   background: $grey;
   font-size: x-small;
   padding-top: 60px;
@@ -243,25 +248,96 @@ nav {
 span {
   color: black;
 }
-// .nav a {
-//   color: $blue;
-//   margin: auto;
-//   display: flex;
-//   flex-direction: row;
-//   gap: 6px;
-// }
 
-// nav .c {
-//   padding: 20px;
-//   display: flex;
-//   flex-direction: column
-// }
+@media (max-width: 768px) {
+  header {
+    width: 340px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    transition: 2s;
+  }
 
-// span {
-//   color: black;
-// }
+  .sea {
+    width: 340px;
+  }
 
-// .social {
-//     display: flex;
-//     gap: 30px;
-// }
+  h1 {
+    width: 300px;
+    text-align: center;
+  }
+  .enter {
+    flex-direction: column;
+  }
+
+  input {
+    width: 300px;
+  }
+  
+  .buttom1 {
+    padding: 7px;
+    width: 300px;
+  }
+
+  div.three {
+    flex-direction: column;
+  }
+
+  .three {
+    height: 500px;
+    width: 340px;
+  }
+
+  .container {
+    width: 340px;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .container:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  img {
+    width: 340px;
+  }
+
+  .image {
+    width: 340px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 250px;
+    margin-top: 40px;
+  }
+
+  .saying {
+    width: 340px;
+  }
+
+  .people {
+    height: 750px;
+    width: 340px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .sea1 {
+    width: 340px;
+  }
+
+  nav {
+    width: 340px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .links p {
+    text-align: center;
+  }
+}
