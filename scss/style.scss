@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+$blue: #007bff;
+$grey: #f8f9fa;
+$font1: loto;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
-  font-family: lato;
+  font-family: $font1;
+}
+
+body {
+  background: $blue;
 }
 
 header {
-  margin-top: 10px;
   padding: 7px;
-  background: #f8f9fa;
+  background: $grey;
   font-size: 0.9em;
   display: flex;
   justify-content: space-around;
@@ -20,13 +27,19 @@ header {
 
 button {
   padding: 5px;
-  background: #007bff;
+  background: $blue;
   color: white;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: $grey;
+  color: $blue;
 }
 
 .sea {
-  height: 400px;
+  height: 370px;
   background: url(../content/bg-masthead.jpg);
   background-position: center;
   background-size: cover;
@@ -57,13 +70,72 @@ input {
 .buttom1 {
   padding: 7px;
   width: 100px;
-  background: #007bff;
-  color: white;
-  border-radius: 4px;
 }
 
+// 
+div.three {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.three {
+  height: 300px;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  background: $grey;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 
-.enter {
+i {
+  color: $blue;
+  font-size: xx-large;
+}
 
+.logo {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+div.logo p {
+  text-align: center;
+  font-size: small;
+}
+
+// 
+
+.container {
+  max-width: 1000px;
+  background:white;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+img {
+  width: 500px;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 60px;
+  padding-left: 60px;
+}
+
+.container:nth-child(odd) {
+  display: flex;
+  flex-direction: row;
 }
